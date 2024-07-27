@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurnia Banyuwangi</title>
+    <link rel="stylesheet" href="sass/app.css">
+</head>
+
+<style> 
+    a {
+        color: #020a06 !important;
+    }
+
+    a:hover {
+        color: black !important;
+    }
+
+    .navbar-nav>li {
+        margin-left: 30px;
+    }
+
+    #carousel {
+        background: url(assets/carousel.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.1);
+        background-position: center;
+        top: 0;
+    }
+
+    #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    input {
+        text-indent: 10px;
+    }
+</style>
+
+<body>
+    <nav id="beranda" class="navbar navbar-expand-md bg-body-tertiary" style="height: 100px;">
+        <div class="container">
+            <a class="navbar-brand align-content-center" href="#">
+                <img src="assets/logo.png" alt="Logo" width="40" class="d-inline-block align-text-center">
+                <span class="text-danger" style="font-size: 24px;"><b>Kurnia Banyuwangi</b></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center bg-light" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang-kami">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Produk
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#produk">Produk A</a></li>
+                            <li><a class="dropdown-item" href="#produk">Produk B</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#produk">Produk Lain</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Hubungi Kami</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a href="https://instagram.com/kurniapastry?igshid=MzRlODBiNWFlZA==" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path fill="#000000"
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carousel" class="">
+        <div style="height: 700px; width: 100%;background-color: rgba(0, 0, 0, 0.5);">
+            <h1 class=" text-light" style="padding-top: 150px; width: 50%; margin-left: 20%;"><span
+                    class="text-warning">Kurnia Banyuwangi</span> <br>Rasakan kelezatan manis dan gurihnya kue pia, kue
+                tradisional khas yang menggugah selera. </h1>
+            
+        </div>
+    </div>
+    <div class="text-light bg-dark " style="bottom: 13%; height: 30%; width: 100%;">
+        <div class="container">
+            <div class="row py-5 text-center">
+                <div class="col ">
+                    <h6><b>Halal</b></h6>
+                    <small>Kurnia Banyuwangi sudah mendapatkan sertifikat halal sehingga aman dikonsumsi untuk orang
+                        muslim</small>
+                </div>
+                <div class="col">
+                    <h6><b>Kualitas Tinggi</b></h6>
+                    <small>Dibuat dengan bahan-bahan berkualitas dan teknik tradisional yang terjaga, menjadikan setiap
+                        gigitan menghadirkan kenangan masa lalu yang tak terlupakan.</small>
+                </div>
+                <div class="col">
+                    <h6><b>Harga Bersaing</b></h6>
+                    <small>Kurnia Banyuwangi memiliki harga yang bersaing serta hemat dikantong</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tentang-kami" class="bg-light py-5 border-bottom">
+        <h1 class="text-warning text-center "><b>Tentang Kami</b></h1>
+        <h4 class="text-dark text-center"><b>Kelezatan yang tak terlupakan</b></h4>
+        <div class="container mt-5">
+            <div class="row ">
+                <div class="col text-center">
+                    <img src="assets/about-us-1.jpg" alt="" width="200px" height="200px" class="rounded-circle">
+                    <h3 class="mt-3 text-warning"><b>Bahan</b></h3>
+                </div>
+                <div class="col text-center">
+                    <img src="assets/about-us-2.jpg" alt="" width="200px" height="200px" class="rounded-circle">
+                    <h3 class="mt-3 text-warning"><b>Pengolahan</b></h3>
+                </div>
+                <div class="col text-center">
+                    <img src="assets/about-us-3.png" alt="" width="200px" height="200px" class="rounded-circle">
+                    <h3 class="mt-3 text-warning"><b>Packing</b></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 text-center">
+            <p>Bahan untuk pembuatan kue pia, emping mlinjo, carang mas dll. pastinya dipilih dari bahan" berkualitas
+                dan higenis.
+
+                Proses pembuatannyapun sudah memakai mesin yang canggih agar olahan jadinya lebih higenis tetapi kita
+                tetap menjunjung rasa tradisional.
+
+                Packing ini sebenarnya berbentuk sederhana, namun dengan adanya desain yang unik dan pemilihan warna
+                yang unik juga mampu untuk menarik minat pelanggan dalam melihatnya. kemasan kotak sendiri mempunyai
+                kelebihan dapat lebih mudah dalam melakukan pengemasan kue.</p>
+            
+        </div>
+    </div>
+
+
+    <div id="produk" class="bg-secondary-subtle pt-4  border-top">
+        <div class="pt-4 pb-1 text-center">
+            <h2 class="text-center mb-5 text-dark"><b>Beberapa Jenis Produk Kami</b></h2>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col mt-5">
+                    <div class="card border-0">
+                        <img class="card-img rounded-bottom-0" src="assets/product-1.png" />
+                        <h4 class="text-warning ms-3 mt-3">
+                            <b>Kue Carang Mas</b>
+                        </h4>
+                        
+                        <p class="text-dark ms-3 mt-0"><small><b>sampel salah satu jenis carang mas</b></small></p>
+                        <div class="card-body">
+                            <small>Carang mas merupakan camilan jadul yang memiliki tekstur crunchy. Kue ini tidak kalah
+                                lezat dengan camilan yang kekinian. Memiliki rasa manis dan garing, kue carang mas juga
+                                sehat. Karena bahan dasar kue ini terbuat dari ubi jalar. Manfaat dari makanan carang
+                                mas dapat melancarkan pencernaan dalam tubuh karena terbuat dari ubi jalar yang terkenal
+                                akan seratnya yang tinggi dan memiliki bentuk seperti mie kecil – kecil yang dibentuk
+                                setengah lingkaran.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <img class="card-img rounded-bottom-0" src="assets/product-2.png" />
+                        <h4 class="text-warning ms-3 mt-3">
+                            <b>Kue Pia</b>
+                        </h4>
+                        
+                        <p class="text-dark ms-3 mt-0"><small><b>sampel salah satu jenis kue pia</b></small></p>
+                        <div class="card-body">
+                            <small>Rasakan kelezatan manis dan gurihnya kue pia, kue tradisional khas yang menggugah
+                                selera. Dibuat dengan bahan-bahan berkualitas dan teknik tradisional yang terjaga,
+                                menjadikan setiap gigitan menghadirkan kenangan masa lalu yang tak terlupakan.Kue Pia
+                                adalah kue tradisional yang berasal dari masyarakat Tionghoa, dan sebenarnya berarti
+                                'kue'. Pia terbuat dari campuran kacang hijau dan gula yang dibungkus dengan adonan
+                                tepung dan dipanggang. Pia secara umum memiliki rasa manis legit dan kini telah hadir
+                                dalam berbagai varian isi seperti coklat, durian, keju, dan sebagainya.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-5">
+                    <div class="card border-0">
+                        <img class="card-img rounded-bottom-0" src="assets/product-3.png" />
+                        <h4 class="text-warning ms-3 mt-3">
+                            <b>Kue Jipang</b>
+                        </h4>
+                        
+                        <p class="text-dark ms-3 mt-0"><small><b>sampel salah satu jenis kue jipang</b></small></p>
+                        <div class="card-body">
+                            <small>Pernah dengat kue bernama jipang atau gipang. Kue kering tradisional asli Indonesia
+                                ini ada yang dibuat dari emping melinjo.
+                                Emping melinjo sendiri menyimpan rasa yang sangat gurih. Jadi, tak ayal bila makanan ini
+                                menonjolkan 2 rasa tersebut. Yaitu, gurih dari emping melinjo dan manisnya gula merah
+                                atua gula aren.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog" class="bg-light mt-5">
+    
+            <div id="contact" class="container">
+                <h3 class="text-center pt-4">Hubungi Kami Sekarang</h3>
+                <h6 class="text-center text-secondary">Kami akan menghubungimu kembali maksimal dalam 24 jam </h6>
+                <div class="bg-light pt-4" style="margin-left: 20%;margin-right: 20%;">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label"><small>Nama</small></label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"><small>Alamat Email</small></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"><small>Kami tidak akan pernah membagikan
+                                    identitasmu</small></div>
+                        </div>
+                        <label for="floatingTextarea2"><small>Pesan</small></label>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2" class="text-secondary"><small>Tinggalkan kami
+                                    pesan...</small></label>
+                        </div>
+                        
+                        <div class="text-center mt-5 pb-5">
+                            <a id="kirim" href="#" class="btn btn-outline-primary rounded-5 btn-sm p-2"
+                                style="width: 150px;">Kirim</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: #3b806f">
+            <div class="container p-4">
+                <h4 class="text-light"><b>Kurnia Banyuwangi</b></h4>
+                <div class="row">
+                    <div class="col pt-4">
+                        <h6 class="text-warning"><b>Perusahaan</b></h6>
+                        <a class="nav-link link-light pt-3" href="#tentang-kami"><small>Tentang Kami</small></a>
+                       
+                        <a class="nav-link link-light pt-3" href="#produk"><small>Produk</small></a>
+                        <a class="nav-link link-light pt-3" href="#contact"><small>Hubungi Kami</small></a>
+                      
+                    </div>
+                    <div class="col pt-4">
+                        <h6 class="text-warning"><b>Produk</b></h6>
+                        <a class="nav-link link-light pt-3" href="#produk"><small>Kue Pia</small></a>
+                        <a class="nav-link link-light pt-3" href="#produk"><small>Kue Jipang</small></a>
+                        <a class="nav-link link-light pt-3" href="#produk"><small>Kue Carang Mas</small></a>
+                    </div>
+                    <div class="col pt-4">
+                        <h6 class="text-warning"><b>KurniaBanyuwangi.com</b></h6>
+                        <h5 class="text-light"><b>UD Kurnia</b></h5>
+                        <p class="text-light"><small> Banyuwangi, Jawa Timur
+                                </small></p>
+                    </div>
+                    <hr class="border-top border-white mt-5">
+                    <div class="row">
+                        <div class="col col-sm-10">
+                            <small class="text-white">
+                                KurniaBanyuwangi</small>
+                        </div>
+                        <div class="col me-auto">
+                            <span class="text-light me-2" style="font-size: 12px;">Ikuti Kami di </span>
+                            <a href="https://instagram.com/kurniapastry?igshid=MzRlODBiNWFlZA==" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+        <button type="button" class="btn btn-danger btn-floating btn-lg rounded-circle" id="btn-back-to-top">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #ffffff
+                    }
+                </style>
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+            </svg>
+        </button>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            let btnTop = document.getElementById("btn-back-to-top");
+
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                ) {
+                    btnTop.style.display = "block";
+                } else {
+                    btnTop.style.display = "none";
+                }
+            }
+            btnTop.addEventListener("click", backToTop);
+
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            let p = '';
+            let alamat = '';
+            let nama = '';
+
+            $("#name").on('change keyup paste', function () {
+                nama = encodeURIComponent("Perkenalkan saya " + $("#name").val() + "\n");
+            });
+
+            $("#exampleInputEmail1").on('change keyup paste', function () {
+                alamat = encodeURIComponent("Beralamat di " + $("#exampleInputEmail1").val() + "\n");
+            });
+
+            $("#floatingTextarea2").on('change keyup paste', function () {
+                p = encodeURIComponent("Saya ingin, " + $("#floatingTextarea2").val());
+            });
+
+            $("#kirim").on('click', function () {
+                let wa = 'https://wa.me/6285335877449?text=' + nama + alamat + p;
+                $("#kirim").attr("href", wa)
+            });
+        </script>
+</body>
+
+</html>
